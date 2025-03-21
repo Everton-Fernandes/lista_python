@@ -1,6 +1,6 @@
 def calcular_medias(alunos):
     return [
-        (nome, (sum(notas) / len(notas)))
+        (nome, round(sum(notas) / len(notas), 2)) # round para arredondar a média para 2 casas decimais
         for nome, notas in alunos.items()
         ]
 
